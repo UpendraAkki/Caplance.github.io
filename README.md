@@ -1,7 +1,7 @@
-## Lumesonic
+## Caplance
 
 A modern, responsive web application built with **React**, **TypeScript**, and **Tailwind CSS**, bundled with **Vite** and a component system based on **shadcn-ui**.  
-This repository contains the full frontend codebase for the Lumesonic web app.
+This repository contains the full frontend codebase for the Caplance web app.
 
 ---
 
@@ -78,7 +78,7 @@ npm run deploy
 npm run build
 
 # 2. Deploy the built assets
-npx wrangler pages deploy dist --project-name=lumesonic
+npx wrangler pages deploy dist --project-name=caplance
 ```
 
 #### First-time Cloudflare setup
@@ -88,7 +88,7 @@ npx wrangler pages deploy dist --project-name=lumesonic
 3. Deploy with Wrangler:  
 
    ```sh
-   npx wrangler pages deploy dist --project-name=lumesonic
+   npx wrangler pages deploy dist --project-name=caplance
    ```
 
 The live deployment is currently available at: https://57934188.lumesonic.pages.dev
