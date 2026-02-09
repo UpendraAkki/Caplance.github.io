@@ -1,73 +1,183 @@
-# Welcome to your Lovable project
+## Lumesonic
 
-## Project info
+A modern, responsive web application built with **React**, **TypeScript**, and **Tailwind CSS**, bundled with **Vite** and a component system based on **shadcn-ui**.  
+This repository contains the full frontend codebase for the Lumesonic web app.
 
-**URL**: https://lovable.dev/projects/bb45fe55-9940-4055-a46f-2de2effdefa7
+---
 
-## How can I edit this code?
+### Project links
 
-There are several ways of editing your application.
+- **Production URL**: https://57934188.lumesonic.pages.dev  
+- **Cloudflare Pages project**: https://lumesonic.pages.dev  
+- **GitHub repo (Caplance GitHub Pages)**: [`UpendraAkki/Caplance.github.io`](https://github.com/UpendraAkki/Caplance.github.io.git)  
+- **Overview video (YouTube)**: [`https://youtu.be/LDq4B2bHaII`](https://youtu.be/LDq4B2bHaII)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bb45fe55-9940-4055-a46f-2de2effdefa7) and start prompting.
+### Features
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Modern frontend stack** with React + TypeScript + Vite
+- **Tailwind CSS** for rapid, utility‑first styling
+- **shadcn-ui** component primitives for consistent UI
+- **Fast local development** with hot module reloading
+- **Cloudflare Pages** deployment workflow (via `wrangler`)
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Getting started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+#### Prerequisites
 
-Follow these steps:
+- **Node.js** (LTS recommended)  
+- **npm** (bundled with Node.js)
+
+#### Installation
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Enter the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+#### Running the app locally
+
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start the Vite dev server. Open the URL printed in the terminal (usually `http://localhost:5173`) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+### Available npm scripts
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **`npm run dev`**: Start the Vite development server.
+- **`npm run build`**: Create an optimized production build in the `dist` folder.
+- **`npm run preview`**: Preview the production build locally (after running `npm run build`).
+- **`npm run deploy`**: Convenience command for deploying to Cloudflare Pages (see below).
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+### Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+#### Quick deploy (recommended)
 
-## How can I deploy this project?
+```sh
+npm run deploy
+```
 
-Simply open [Lovable](https://lovable.dev/projects/bb45fe55-9940-4055-a46f-2de2effdefa7) and click on Share -> Publish.
+#### Manual deploy to Cloudflare Pages
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# 1. Build the project
+npm run build
 
-Yes, you can!
+# 2. Deploy the built assets
+npx wrangler pages deploy dist --project-name=lumesonic
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+#### First-time Cloudflare setup
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. Install dependencies: `npm install`  
+2. Build the project: `npm run build`  
+3. Deploy with Wrangler:  
+
+   ```sh
+   npx wrangler pages deploy dist --project-name=lumesonic
+   ```
+
+The live deployment is currently available at: https://57934188.lumesonic.pages.dev
+
+---
+
+### UI screenshots
+
+All screenshots are stored under `public/Images`. Below is a gallery of key flows and pages.
+
+#### Landing and navigation
+
+<table>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192005.png" alt="Landing view 1" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192056.png" alt="Landing view 2" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192153.png" alt="Navigation and header" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192212.png" alt="Hero / call to action" /></td>
+  </tr>
+</table>
+
+#### Core flows
+
+<table>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192230.png" alt="Core flow 1" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192345.png" alt="Core flow 2" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192405.png" alt="Core flow 3" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192439.png" alt="Core flow 4" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192456.png" alt="Core flow 5" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192523.png" alt="Core flow 6" /></td>
+  </tr>
+</table>
+
+#### Detailed views and states
+
+<table>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192541.png" alt="Detail view 1" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192612.png" alt="Detail view 2" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192628.png" alt="Detail view 3" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192641.png" alt="Detail view 4" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192652.png" alt="Detail view 5" /></td>
+    <td><img src="public/Images/Screenshot 2026-02-09 192708.png" alt="Detail view 6" /></td>
+  </tr>
+  <tr>
+    <td><img src="public/Images/Screenshot 2026-02-09 192718.png" alt="Detail view 7" /></td>
+    <td></td>
+  </tr>
+</table>
+
+### Development notes
+
+- The project uses **Vite** for fast builds and HMR.
+- UI components are primarily built with **shadcn-ui** and **Tailwind CSS** utilities.
+- Configuration for Cloudflare Pages / Wrangler is managed via `wrangler.toml` in the project root.
+
+---
+
+### Contributing
+
+1. Fork the repository.
+2. Create a new branch for your changes:
+
+   ```sh
+   git checkout -b feature/my-change
+   ```
+
+3. Commit and push your work:
+
+   ```sh
+   git commit -m "Describe your change"
+   git push origin feature/my-change
+   ```
+
+4. Open a pull request.
+
+---
+
+### License
+
+This project does not currently specify a license. If you intend to open‑source it, consider adding a `LICENSE` file (e.g. MIT, Apache‑2.0) and updating this section accordingly.
