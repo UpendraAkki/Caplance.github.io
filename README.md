@@ -7,8 +7,7 @@ This repository contains the full frontend codebase for the Caplance web app.
 
 ### Project links
 
-- **Production URL**: https://57934188.lumesonic.pages.dev  
-- **Cloudflare Pages project**: https://lumesonic.pages.dev  
+- **Cloudflare Pages project**: https://main.caplance.pages.dev  
 - **GitHub repo (Caplance GitHub Pages)**: [`UpendraAkki/Caplance.github.io`](https://github.com/UpendraAkki/Caplance.github.io.git)  
 - **Overview video (YouTube)**: [`https://youtu.be/LDq4B2bHaII`](https://youtu.be/LDq4B2bHaII)
 
